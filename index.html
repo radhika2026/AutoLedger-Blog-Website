@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>AutoLedger Blog</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/logoo.jpeg" rel="icon" />
+    <link href="assets/img/logoo.jpeg" rel="apple-touch-icon" />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- <h1 class="logo"><a href="index.html">AutoLedger</a></h1> -->
+        <!--        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid" ></a> -->
+        <h1 class="logo"><a href="index.html">AutoLedger</a></h1>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#Problem">Problem</a></li>
+            <li><a class="nav-link scrollto" href="#Solution">Solution</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#Front-End">Front-End</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#Back-End">Back-End</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#Integration">Integration</a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Schema</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#user">User Schema</a></li>
+                <li><a href="#car">Car Schema</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#Future">Future</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <div
+      id="hero"
+      class="hero route bg-image"
+      style="background-image: url(assets/img/hero-bg.png)"
+    >
+      <div class="overlay-itro"></div>
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <!--<p class="display-6 color-d">Hello, world!</p>-->
+            <h1 class="hero-title mb-4">AutoLedger</h1>
+            <p class="hero-subtitle">
+              <span
+                class="typed"
+                data-typed-items="Reinvent Vehicle Registration, Ownership and beyond using ResilientDB!"
+              ></span>
+            </p>
+            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <main id="main">
+      <!-- ======= Problem Section ======= -->
+      <section id="Problem" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="title-box-2">
+                  <h5 class="title-left">Problem Statement</h5>
+                </div>
+                <p class="lead">
+                  In the current landscape of vehicle registration, the
+                  traditional system is afflicted with drawbacks such as
+                  inefficiencies and bureaucratic complexities and is
+                  susceptible to fraudulent activities like false ownership
+                  transfers, mileage tampering, insurance fraud, and so on. In
+                  addition, the existing solution is time-consuming, involves
+                  multiple stages, and relies heavily on the intervention of
+                  government officials. As a result, the overall system lacks
+                  transparency, which results in compromising the integrity of
+                  the vehicle. Here lies the motivation for our project.
+                </p>
+                <p class="lead">
+                  To address these critical issues, we propose the
+                  implementation of <b>AutoLedger</b>, a blockchain-based
+                  solution to de-centralize the processes of vehicle
+                  registration, vehicle ownership, and maintenance of insurance
+                  and servicing records. This ensures that vehicle records are
+                  easily accessible, secure, and tamper-proof.
+                </p>
+                <p class="lead">
+                  We implemented this project on <b>ResilientDB</b>, which is
+                  the in-house blockchain fabric developed at the University of
+                  California, Davis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Solution Section ======= -->
+      <section id="Solution" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="title-box-2">
+                  <h5 class="title-left">Solution: AutoLedger</h5>
+                </div>
+                <center>
+                  <img
+                    src="assets/img/AutoLedger.png"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 180px"
+                  />
+                </center>
+                <p class="lead">
+                  The primary goal of implementing <b>AutoLedger</b> is based on
+                  the principles of transparency, consistency, and robustness of
+                  vehicle records across various users and user-types. This
+                  enhances data availability, resilience to faults, and the
+                  security of vehicle records.
+                </p>
+                <p class="lead">
+                  While working on the project, we envisioned using blockchain
+                  technology as an immutable key-value database to effectively
+                  store the vehicle records, which provides a way to ratify the
+                  records and also prevents tampering with them.
+                </p>
+                <p class="lead">
+                  <b>AutoLedger</b> leverages the power of blockchain for
+                  decentralized and transparent vehicle registration. It allows
+                  only DMV personnel to register a vehicle by committing the
+                  records to the blockchain, ensuring authenticity. Also, it
+                  allows Insurance and Servicing personnel to view and update
+                  relevant information while preserving data privacy. The
+                  vehicle owners can view the entire record, ensuring its
+                  correctness. Finally, it provides DMV with exclusive access to
+                  the vehicle records and rights to transfer vehicle ownership,
+                  ensuring transparency and process robustness.
+                </p>
+                <p class="lead">
+                  <b>AutoLedger</b> is a full stack application built by
+                  utilizing React for the frontend and GraphQL server, Crow
+                  server for the backend. The frontend manages the UI logic
+                  associated with AutoLedger, while the backend seamlessly
+                  processes requests from the frontend, efficiently invokes
+                  various operations on the ResilientDB blochain, and delivers
+                  precise responses to the frontend.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Solution Section -->
+
+      <!-- ======= Front-End Development Section ======= -->
+      <section id="Front-End" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="title-box-2">
+                  <h5 class="title-left">Front-End Development</h5>
+                </div>
+                <p class="lead">
+                  The frontend for the application was developed in
+                  <b>React</b>, leveraging the latest features such as cookies
+                  for enhanced functionality and to ensure maintainable and
+                  clean code. The utilization of modern React features
+                  contributes to the overall robustness and efficiency of the
+                  application.
+                </p>
+                <p class="lead">
+                  Throughout the development process, we focused on creating
+                  multiple components to enhance the modularity and reusability
+                  of the codebase, which we will be discussing below and what we
+                  were trying to achieve in this application. Each component was
+                  carefully designed and implemented to serve specific
+                  functionalities, fostering a clear and organized structure.
+                </p>
+                <center>
+                  <img
+                    src="assets/img/home.png"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 500px"
+                  />
+                  <p>(Landing Page for AutoLedger)</p>
+                </center>
+                <center>
+                  <img
+                    src="assets/img/f2.png"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 500px"
+                  />
+                  <p>(Sign up activity diagram)</p>
+                </center>
+                <p class="lead">
+                  <b>Landing page</b>: The landing page is the first interface
+                  the user will interact with. It contains the following
+                  components:
+                  <br />
+                  (i)<b> Sign-up</b>: This button will invoke the user to
+                  provide a username, password, work email, and user role to
+                  register and store them in ResilientDB for future
+                  authentication.
+                  <br />
+                  (ii)<b> Login</b>: This button will invoke the user to provide
+                  the user email and password and authenticate these credentials
+                  for existing users. On success, the user will be taken to the
+                  home page based on the user role.
+                </p>
+                <center>
+                  <img
+                    src="assets/img/f3.png"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 500px"
+                  />
+                  <p>(User roles and their defined permissions)</p>
+                </center>
+
+                <p class="lead">
+                  The <b>DMV personnel</b> will have exclusive view and update
+                  access to all the vehicle records. This ensures the
+                  authenticity of the vehicle records and prevents their
+                  tampering. Operations for a DMV User:
+                  <br />
+                  (i) <b>Register a new vehicle</b>: DMV personnel will have
+                  exclusive rights to register a new vehicle by committing the
+                  vehicle records to the blockchain.<br />
+                  (ii) <b>View and update records by number plate</b>: DMV
+                  personnel will have the rights to search any vehicle records
+                  by number plate and the permission to update them.<br />
+                  (iii) <b>Transfer vehicle ownership</b>: DMV personnel will
+                  have the exclusive rights to validate and transfer vehicle
+                  records from the previous owner to the new owner.<br />
+                </p>
+                <!-- <center>
+                      <img src="assets/img/f1.png" alt="" class="img-fluid" style="height: 500px;">
+                        <p>(Home Page for the Vehicle Owner)</p>
+                    </center> -->
+                <p class="lead">
+                  The <b>Vehicle Owner</b> will have access to view all the
+                  records related to the vehicle. This will allow the user to
+                  ensure the correctness of all the records, including insurance
+                  and servicing records.Operations for a vehicle owner:<br />
+                  (i) <b>View complete records</b>: The owner has permission to
+                  search for the vehicle records that are owned by this user and
+                  view the complete records present for that particular vehicle.
+                </p>
+
+                <!-- <center>
+                      <img src="assets/img/f1.png" alt="" class="img-fluid" style="height: 500px;">
+                        <p>(Home Page for the Insurance User)</p>
+                    </center> -->
+                <p class="lead">
+                  The <b>Insurance Personnel</b> will have limited access to the
+                  vehicle records, allowing them to view and update only
+                  insurance records, thereby ensuring user-data privacy.
+                  Operations for an Insurance User:<br />
+                  (i) <b>View and update insurance records</b>: Insurance
+                  personnel will have permission to retrieve insurance records
+                  for a vehicle by number plate and update them whenever the
+                  owner opts for new insurance for the vehicle.
+                </p>
+
+                <!-- <center>
+                      <img src="assets/img/f1.png" alt="" class="img-fluid" style="height: 500px;">
+                        <p>(Home Page for the Servicing User)</p>
+                    </center> -->
+                <p class="lead">
+                  The <b>Servicing Personnel</b> will have limited access to the
+                  vehicle records, allowing them to view and update access only
+                  to the servicing records, hence ensuring user-data privacy.
+                  Operations for a Servicing User:<br />
+                  (i)<b> View and update servicing records</b>: Servicing
+                  personnel will have the permission to retrieve servicing
+                  records for a vehicle by number plate and update them whenever
+                  the owner services the vehicle.
+                </p>
+                <!-- <center>
+                      <img src="assets/img/f1.png" alt="" class="img-fluid" style="height: 500px;">
+                        <p>( Home Page for the Normal User)</p>
+                    </center> -->
+                <p class="lead">
+                  A <b>Normal User</b> will have restricted access to vehicle
+                  records, enabling them to view essential information about the
+                  vehicle while maintaining user-data privacy. This feature
+                  assists users in making informed decisions about potential
+                  vehicle purchases while safeguarding both user and vehicle
+                  sensitive information. Operations for a Normal User: <br />
+                  (i) <b>View vehicle records</b>: A normal user will have
+                  restricted access to retrieve essential information for a
+                  vehicle by number plate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Front-End Development Section -->
+
+      <!-- ======= Back-End Development Section ======= -->
+      <section id="Back-End" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="title-box-2">
+                  <h5 class="title-left">Back-End Development</h5>
+                </div>
+                <p class="lead">
+                  In the backend architecture of AutoLedger, we have employed
+                  ResilientDB’s GraphQL server integrated with a Python SDK to
+                  handle API calls from the React frontend. The GraphQL server,
+                  which is hosted locally, internally communicates with the Crow
+                  HTTP server (also locally hosted). The Crow server eventually
+                  interacts with the KV server, ResilientDB’s blockchain
+                  solution, which is a key-value store.
+                </p>
+                <p class="lead">
+                  For the <b>‘user’</b> asset, we have implemented the below
+                  essential API calls:<br />
+                  (i) A <b>POST</b> API facilitates user registration.<br />
+                  (ii) A <b>GET</b> API facilitates user login and displays user
+                  profiles.<br />
+                  (iii) An <b>UPDATE</b> API allows users to modify their
+                  profile information.
+                </p>
+                <p class="lead">
+                  Similarly, for the <b>‘car’</b> asset, we have implemented the
+                  following API calls:<br />
+                  (i) A <b>POST</b> API handles the registration of a new
+                  car.<br />
+                  (ii) A <b>GET</b> API fetches the latest version of specific
+                  car details based on the license number.<br />
+                  (iii) An <b>UPDATE</b> API enables modification of specific
+                  car details based on the license number.
+                </p>
+                <p class="lead">
+                  This robust backend infrastructure ensures seamless
+                  communication between the frontend and the KV server,
+                  ResilientDB’s blockchain solution. Thus providing a foundation
+                  for the secure and efficient functioning of AutoLedger.
+                </p>
+                <p class="lead">API endpoints are as below:</p>
+                <center>
+                  <iframe
+                    src="table.html"
+                    title="API Call Table"
+                    height="500"
+                    width="1250"
+                    ;
+                  ></iframe>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Back-End Development Section -->
+
+      <!-- ======= Integration Section ======= -->
+      <section id="Integration" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    Integrations between the interfaces
+                  </h5>
+                </div>
+                <p class="lead">
+                  To facilitate seamless communication between the frontend and
+                  backend, we have established a robust integration using the
+                  GraphQL server. We have created the backend API endpoints on
+                  the GraphQL server that are accessible to the React frontend
+                  application. We have leveraged ResilientDB’s kv-server to
+                  securely store user data and car data on the blockchain.
+                </p>
+                <p class="lead">
+                  Communication with ResilientDB’s KV server is achieved through
+                  the HTTP Crow framework. Internally, the GraphQL server
+                  invokes the Crow server, which, in turn, interacts with the KV
+                  server to execute set and get operations on the blockchain
+                  based on the invoked API. The GraphQL server then efficiently
+                  returns the API’s response to the React application, ensuring
+                  a streamlined and efficient integration between the
+                  interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Integration Section -->
+
+      <!-- ======= User Schema Section ======= -->
+      <section id="user" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="title-box-2">
+                  <h5 class="title-left">User Schema</h5>
+                </div>
+                <center>
+                  <img
+                    src="assets/img/user.png"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 250px"
+                  />
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End User Schema Section -->
+
+      <!-- ======= Car Schema Section ======= -->
+      <section id="car" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="title-box-2">
+                  <h5 class="title-left">Car Schema</h5>
+                </div>
+                <center>
+                  <img
+                    src="assets/img/car.png"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 500px"
+                  />
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Car Schema Section -->
+
+      <!-- ======= Future Work Section ======= -->
+      <section id="Future" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="title-box-2">
+                  <h5 class="title-left">Future Work</h5>
+                </div>
+                <p class="lead">
+                  <b>A Dedicated Page for Law enforcement agencies</b>: In the
+                  future, AutoLedger envisions expanding its impact by
+                  introducing a dedicated page for law enforcement agencies,
+                  particularly the police department. This addition aims to
+                  enhance public safety and streamline law enforcement
+                  activities by providing a centralized hub for accessing
+                  crucial vehicle data. Police officers will be empowered to
+                  efficiently track and verify information related to vehicle
+                  registration, ownership, and maintenance directly through the
+                  AutoLedger platform. This feature ensures quicker response
+                  times, improved accuracy, and strengthened collaboration
+                  between the police department and other stakeholders within
+                  the automotive ecosystem
+                </p>
+                <p class="lead">
+                  <b>Real-Time Alerts</b>: Implement real-time alerts to notify
+                  law enforcement of any suspicious or flagged activities
+                  related to vehicles, such as stolen vehicles, expired
+                  registrations, or vehicles involved in incidents..
+                </p>
+                <p class="lead">
+                  <b>Digital Evidence Repository</b>: Enable the upload and
+                  storage of digital evidence related to vehicles, such as
+                  photos, documents, or videos, directly within the AutoLedger
+                  platform, facilitating a comprehensive view of each case.
+                </p>
+                <p class="lead">
+                  <b>Mobile Accessibility</b>: Develop a mobile-friendly
+                  interface to allow police officers to access critical vehicle
+                  information while on the field, enhancing their ability to
+                  perform checks during routine stops or emergencies.
+                </p>
+                <p class="lead">
+                  --AutoLedger remains committed to continually evolving and
+                  contributing to a safer and more connected community!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Future Work Section -->
+      <section id="Contributor" class="about-mf sect-pt4 route">
+      <!-- ======= Testimonials Section ======= -->
+      <div
+        class="testimonials paralax-mf bg-image"
+        style="background-image: url(assets/img/overlay-bg.jpg)"
+      >
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div
+                class="testimonials-slider swiper"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/radika.jpeg"
+                          alt=""
+                          width="150"
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author"
+                          >Radhika Gupta (Led the team, extensive contributor
+                          for Backend & Frontend, Major Contributor for UI
+                          design)</span
+                        >
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          Redesigned the complete UI in last 48 hours of
+                          presentation
+                          <br />
+                          •<b>Initial GitHub Setup</b>: Established the initial
+                          GitHub repository, laying the groundwork for our
+                          project's version control and collaboration.
+                          <br />
+                          •<b>Leadership and Coordination</b>: Led the project.
+                          Took the initiative in organizing team meetings,
+                          fostering effective communication, and ensuring
+                          coordinated efforts towards our project goals.
+                          <br />
+                          •<b>Technology Evaluation</b>: Tested and evaluated
+                          various technologies, including GraphQL, ResVallet,
+                          and different SDKs, to determine the best fit for our
+                          project's needs.
+                          <br />
+                          •<b>GraphQL Query Development</b>: Collaborated with
+                          Siva to develop and optimize GraphQL queries, ensuring
+                          they met our project requirements.
+                          <br />
+                          •<b>Frontend API Integration</b>: Integrated all the
+                          necessary API calls into the frontend, ensuring smooth
+                          interaction between the front and back ends.
+                          <br />
+                          •<b>UI Enhancements</b>: Worked with Arvind to
+                          significantly enhance the user interface across all
+                          pages, improving both design and usability.
+                          <br />
+                          •<b>Testing and Debugging</b>: In collaboration with
+                          Siva, involved in thorough testing of the API
+                          integration, identifying and fixing errors to enhance
+                          application stability.
+                          <br />
+                          •<b>Error Notification Implementation</b>: Implemented
+                          toast notifications for error reporting and API
+                          responses, improving user experience with real-time
+                          feedback.
+                          <br />
+                          •<b>Rewrote the Insurance</b>: The page was initially
+                          built by other members of the team but had major
+                          issues, including unnecessary fields and the absence
+                          of useState to store the values.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/siva.jpeg"
+                          alt=""
+                          width="150"
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author"
+                          >Siva Pilla (Major Contributor for Backend
+                          Development)</span
+                        >
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          •Installed and configured ResilientDB’s KV server,
+                          HTTP Crow server, and GraphQL server (all backend
+                          servers) and orchestrated their seamless integration.
+                          <br />
+                          •Led the design and development of backend APIs (POST,
+                          GET, UPDATE) for both ‘user’ and ‘car’ assets,
+                          rigorously testing them on the local GraphQL server.
+                          (Major Contributor)
+                          <br />
+                          •Actively contributed to the frontend-backend
+                          integration and associated testing processes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/aakash.jpeg"
+                          alt=""
+                          width="150"
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author">Aakash Kotha</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          <b>•Frontend Development and Refinement</b>: Primary
+                          focus was on the development and refinement of key
+                          pages, particularly the DMV pages within the React
+                          framework.
+                          <br />
+                          <b>•API Call Request Structure Creation</b>:
+                          Collaborated closely with Siva to help in the creation
+                          of a well-defined API call request structure.
+                          <br />
+                          <b>•Project Overview Blog Website</b>: Took the
+                          initiative to create a Blog website for external
+                          stakeholders, providing a simplified and accessible
+                          overview of our project.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/arvind.jpeg"
+                          alt=""
+                          width="150"
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author"
+                          >Arvind S (Major Contributor for Frontend
+                          Development)</span
+                        >
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          <b>•Core Page Development</b>: Developed key pages,
+                          including the homepage, search page, rewrote the
+                          service center page, and registration page, focusing
+                          on user-centric design for seamless navigation and
+                          cohesive aesthetics.
+                          <br />
+                          <b>•User Experience Enhancement with Cookies</b>:
+                          Integrated cookies to improve user experience and
+                          streamline session management, making the application
+                          more intuitive and user-friendly.
+                          <br />
+                          <b>•Interactive Feature Implementation</b>: Designed
+                          and implemented engaging interactive elements, such as
+                          a modal-based registration form and a sophisticated
+                          vehicle information page using card components. Also
+                          developed an adaptive navbar that intelligently
+                          displays components based on user roles, enhancing the
+                          user interface.
+                          <br />
+                          <b>•Integration of Team Members' Work</b>: Efficiently
+                          integrated the DMV page, user profile, and sign-up
+                          page and footer developed by teammates, Aakash and
+                          Disha. Focused on significantly improving the UI and
+                          design of these pages.
+                          <br />
+                          <b>•Front-End Validation for Data Integrity</b>:
+                          Implemented front-end validation mechanisms to
+                          maintain data accuracy and enhance user interaction,
+                          providing immediate feedback to users on all pages.
+                          <br />
+                          <b>•Frontend Testing</b>: Thoroughly tested the
+                          frontend, ensuring all components worked perfectly and
+                          contributed to a flawless user experience.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/disha.jpeg"
+                          alt=""
+                          width="150"
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author">Disha N</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          <b>•Setup</b>: Played a key role in including the
+                          establishment of a resilient database on my local
+                          machine. Collaborated with Siva to configure various
+                          components such as ResilientDB's key-value server,
+                          HTTP Crow server, and GraphQL server.
+                          <br />
+                          •Elevated the user interface by introducing additional
+                          components (footer, links, and GitHub icon).
+                          <br />
+                          •Participated in discussions with Radhika for UI
+                          enhancement.
+                          <br />
+                          •Built frontend foundation for insurance, service
+                          center page, and user profile, registration, and
+                          signup page.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End testimonial item -->
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+          
+        </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Testimonials Section -->
+      </section>
+      <!-- ======= Contact Section ======= -->
+      <section
+        id="contact"
+        class="paralax-mf footer-paralax bg-image sect-mt4 route"
+        style="background-image: url(assets/img/overlay-bg.jpg)"
+      >
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">Links</h5>
+                      </div>
+                      <div class="socials">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://github.com/radhika2026/AutoLedger/tree/main"
+                              ><span class="ico-circle"
+                                ><i class="bi bi-github"></i></span
+                            ></a>
+                          </li>
+                          <!-- <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">
+                &copy; Copyright <strong>AutoLedger</strong>. All Rights
+                Reserved
+              </p>
+              <div class="credits">
+                <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+                Designed by
+                <a href="https://www.linkedin.com/in/kothavvsaakash/"
+                  >Aakash Kotha & Team</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

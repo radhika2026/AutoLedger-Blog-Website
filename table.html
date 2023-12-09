@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Table V04</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/util.css" rel="stylesheet">
+
+<meta name="robots" content="noindex, follow">
+<script nonce="a1aac2a3-1f47-4a69-a07c-6491be44ce5b">(function(w,d){!function(j,k,l,m){j[l]=j[l]||{};j[l].executed=[];j.zaraz={deferred:[],listeners:[]};j.zaraz.q=[];j.zaraz._f=function(n){return async function(){var o=Array.prototype.slice.call(arguments);j.zaraz.q.push({m:n,a:o})}};for(const p of["track","set","debug"])j.zaraz[p]=j.zaraz._f(p);j.zaraz.init=()=>{var q=k.getElementsByTagName(m)[0],r=k.createElement(m),s=k.getElementsByTagName("title")[0];s&&(j[l].t=k.getElementsByTagName("title")[0].text);j[l].x=Math.random();j[l].w=j.screen.width;j[l].h=j.screen.height;j[l].j=j.innerHeight;j[l].e=j.innerWidth;j[l].l=j.location.href;j[l].r=k.referrer;j[l].k=j.screen.colorDepth;j[l].n=k.characterSet;j[l].o=(new Date).getTimezoneOffset();if(j.dataLayer)for(const w of Object.entries(Object.entries(dataLayer).reduce(((x,y)=>({...x[1],...y[1]})),{})))zaraz.set(w[0],w[1],{scope:"page"});j[l].q=[];for(;j.zaraz.q.length;){const z=j.zaraz.q.shift();j[l].q.push(z)}r.defer=!0;for(const A of[localStorage,sessionStorage])Object.keys(A||{}).filter((C=>C.startsWith("_zaraz_"))).forEach((B=>{try{j[l]["z_"+B.slice(7)]=JSON.parse(A.getItem(B))}catch{j[l]["z_"+B.slice(7)]=A.getItem(B)}}));r.referrerPolicy="origin";r.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(j[l])));q.parentNode.insertBefore(r,q)};["complete","interactive"].includes(k.readyState)?zaraz.init():j.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+<div class="limiter">
+<div class="container-table100">
+<div class="wrap-table100">
+<div class="table100 ver1 m-b-110">
+<div class="table100-head">
+<table>
+<thead>
+<tr class="row100 head">
+<th class="cell100 column1">API call</th>
+<th class="cell100 column2">Request structure</th>
+<th class="cell100 column3">Response structure</th>
+<th class="cell100 column4">Request description</th>
+</tr>
+</thead>
+</table>
+</div>
+<div class="table100-body js-pscroll">
+<table>
+<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">postTransaction</td>
+<td class="cell100 column2">{ <br>
+"asset_type": "user",<br>
+"name": "Siva",<br>
+"role": "DMV",<br>
+"id_no": "ID123XA",<br>
+"email" : "siva@gmail.com",<br>
+"password" : "0123",<br>
+"timestamp" : "111"<br>
+}
+</td>
+<td class="cell100 column3">{<br>
+id<br>
+}
+</td>
+<td class="cell100 column4">Register a new user</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">getUserTransaction</td>
+<td class="cell100 column2">{<br>
+userEmail: "siva@gmail.com"<br>
+userPwd: “0123”<br>
+}
+</td>
+<td class="cell100 column3">{<br>
+userName<br>
+userRole<br>
+idNo<br>
+email<br>
+password<br>
+}
+</td>
+<td class="cell100 column4">User login and display user profile</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">getAllUserTransactions</td>
+<td class="cell100 column2">{}</td>
+<td class="cell100 column3">{<br>
+userName<br>
+userRole<br>
+idNo<br>
+email<br>
+password<br>
+}
+</td>
+<td class="cell100 column4">List all user profiles</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">updateUserTransaction</td>
+<td class="cell100 column2">{ <br>
+"asset_type": "user",<br>
+"name": "Siva",<br>
+"role": "DMV",<br>
+"id_no": "ID123XA",<br>
+"email" : "siva@gmail.com",<br>
+"password" : "01234567",<br>
+"timestamp" : "120"<br>
+}
+</td>
+<td class="cell100 column3">{<br>
+userName<br>
+userRole<br>
+idNo<br>
+email<br>
+password<br>
+}
+</td>
+<td class="cell100 column4">Update a user profile</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">postTransaction</td>
+<td class="cell100 column2">{
+"asset_type": "car",<br>
+"chassisNo": "SV30-0169266",<br>
+"engineNo": "PJ12345U123456P",<br>
+"manufacturer": "PORSCHE",<br>
+"manufacturingDate": "12-08-2021",<br>
+"numberPlate": "ABC123",<br>
+"registerDate": "15-08-2021",<br>
+"ownerHistory": [{"owner_name":"John Doe", "ownership_start_date": <br>"01-01-2021”,         "ownershipEndDate":"10-08-2021"}],<br>
+"drivingLicense": "DL123456",<br>
+"color": "Blue",<br>
+"seating": "5",<br>
+"transmission": "Automatic",<br>
+"wheelBase": "2.80 meters",<br>
+"groundClearance": "150 mm",<br>
+"driveType": "Front-wheel drive",<br>
+"fuelType": "Petrol",<br>
+"class": "Sedan",<br>
+"model": "911",<br>
+"insuranceNo": "INS553201",<br>
+"insuranceProvider": "ABC Insurance",<br>
+"policyEndDate": "15-08-2022",<br>
+"insuranceHistory": [{"date":"12-10-2021", "cost":"3000", "description":"The<br> car is involved in an accident at the intersection of Street A and <br>Street B. There are visible dents and scratches on the front side."}],<br>
+"mileage": "10 km/l",<br>
+"odometerReading": "5000 km",<br>
+"servicingHistory": [<br>
+{<br>
+"serviceCenter": "AutoCare Service Center",<br>
+"serviceDate": "01-09-2022",	"serviceDescription": "Oil change, filter<br> replacement"<br>
+}],<br>
+"timestamp": "1112"<br>
+}
+</td>
+<td class="cell100 column3">{<br>
+id<br>
+}
+</td>
+<td class="cell100 column4">Registration of a new car</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">getCarTransaction</td>
+<td class="cell100 column2">{<br>
+numberPlate: "ABC123"<br>
+}
+</td>
+<td class="cell100 column3">{<br>
+chassisNo<br>
+engineNo  <br>  manufacturer <br> manufacturingDate<br>
+numberPlate<br>
+registerDate<br>
+ownerHistory <br>{<br>
+ ownerName       <br>  ownershipStartDate <br>     ownershipEndDate<br>
+}<br>
+drivingLicense<br>
+color<br>
+seating<br>
+transmission<br>
+wheelBase<br>
+    groundClearance<br>
+driveType<br>
+fuelType<br>
+carClass<br>
+model<br>
+insuranceNo <br> insuranceProvider<br>
+policyEndDate  <br>  insuranceHistory<br> {<br>
+date<br>
+cost<br>
+description<br>
+}<br>
+mileage<br>
+odometerReading<br>
+servicingHistory<br> {<br>
+serviceCenter<br>
+serviceDate  <br>   serviceDescription<br>
+ }<br>
+}
+</td>
+<td class="cell100 column4">Retrieves particular car details based on number plate number of the carn</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">getAllCarTransactions</td>
+<td class="cell100 column2">{}</td>
+<td class="cell100 column3">{<br>
+chassisNo<br>
+engineNo   <br> manufacturer<br>  manufacturingDate<br>
+numberPlate<br>
+registerDate<br>
+ownerHistory <br>{<br>
+ ownerName     <br>    ownershipStartDate     <br> ownershipEndDate<br>
+}<br>
+drivingLicense<br>
+color<br>
+seating<br>
+transmission<br>
+wheelBase<br>
+    groundClearance<br>
+driveType<br>
+fuelType<br>
+carClass<br>
+model<br>
+insuranceNo<br>  insuranceProvider<br>
+policyEndDate<br>    insuranceHistory<br> {<br>
+date<br>
+cost<br>
+description<br>
+}<br>
+mileage<br>
+odometerReading<br>
+servicingHistory <br>{<br>
+serviceCenter<br>
+serviceDate  <br>   serviceDescription<br>
+ }<br>
+}
+</td>
+<td class="cell100 column4">Retrieves all cars’ records</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">updateCarTransaction</td>
+<td class="cell100 column2">{<br>
+"asset_type": "car",<br>
+"chassisNo": "SV30-0169266",<br>
+"engineNo": "PJ12345U123456P",<br>
+"manufacturer": "PORSCHE",<br>
+"manufacturingDate": "12-08-2021",<br>
+"numberPlate": "ABC123",<br>
+"registerDate": "15-08-2021",<br>
+"ownerHistory": [<br>{<br>"owner_name":"John Doe", <br>"ownership_start_date": "01-01-2021”, <br>        "ownershipEndDate":"10-08-2021"}],<br>
+"drivingLicense": "DL123456",<br>
+"color": "Blue",<br>
+"seating": "5",<br>
+"transmission": "Automatic",<br>
+"wheelBase": "2.80 meters",<br>
+"groundClearance": "150 mm",<br>
+"driveType": "Front-wheel drive",<br>
+"fuelType": "Petrol",<br>
+"class": "Sedan",<br>
+"model": "911",<br>
+"insuranceNo": "INS553201",<br>
+"insuranceProvider": "ABC Insurance",<br>
+"policyEndDate": "15-08-2022",<br>
+"insuranceHistory": <br>[<br>{"date":"12-10-2021", <br>"cost":"3000", <br>"description":"The car is involved in an accident at the intersection of Street A and Street B. There are visible dents and scratches on the front side."<br>}<br>],<br>
+"mileage": "10 km/l",<br>
+"odometerReading": "5000 km",<br>
+"servicingHistory": <br>[<br>
+{<br>
+"serviceCenter": "AutoCare Service Center",<br>
+"serviceDate": "01-09-2022",<br>	"serviceDescription": "Oil change, <br>filter replacement"<br>
+}<br>],<br>
+"timestamp": "1112"<br>
+}
+</td>
+<td class="cell100 column3">{<br>
+chassisNo<br>
+engineNo  <br>  manufacturer <br> manufacturingDate<br>
+numberPlate<br>
+registerDate<br>
+ownerHistory<br> {<br>
+ ownerName     <br>    ownershipStartDate<br>      ownershipEndDate<br>
+}<br>
+drivingLicense<br>
+color<br>
+seating<br>
+transmission<br>
+wheelBase<br>
+    groundClearance<br>
+driveType<br>
+fuelType<br>
+carClass<br>
+model<br>
+insuranceNo  <br>insuranceProvider<br>
+policyEndDate  <br>  insuranceHistory<br> {<br>
+date<br>
+cost<br>
+description<br>
+}<br>
+mileage<br>
+odometerReading<br>
+servicingHistory<br> {<br>
+serviceCenter<br>
+serviceDate  <br>   serviceDescription<br>
+ }<br>
+}
+</td>
+<td class="cell100 column4">Updates a particular car’s records</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="vendor/select2/select2.min.js"></script>
+
+<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+
+
+	</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<script src="js/main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"83223b56fe23cea4","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+</body>
+</html>
